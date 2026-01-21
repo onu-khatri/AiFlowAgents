@@ -1,4 +1,4 @@
-# CsvEmailAgentWorkflow
+# AiFlowAgentWorkflow
 
 A sample **vertical-slice** .NET solution demonstrating **Microsoft Agent Framework (preview)** with **3 specialized agents**:
 
@@ -12,32 +12,6 @@ The agents are orchestrated as a **sequential workflow**:
 CsvReader -> DataAnalyzer -> Emailer
 ```
 
-## Solution Structure
-
-```
-CsvEmailAgentWorkflow.sln
-Directory.Packages.props
-src/
-  CsvEmail.Core/
-    src/ (shared models, options, utilities)
-  CsvEmail.Agents.CsvReader/
-    src/ (CsvTools + CsvReaderAgent)
-  CsvEmail.Agents.DataAnalyzer/
-    src/ (AnalysisTools + DataAnalyzerAgent)
-  CsvEmail.Agents.Emailer/
-    src/ (EmailTools + EmailerAgent)
-  CsvEmail.Orchestrator.Api/
-    src/
-      Program.cs
-      Features/
-        CsvAnalysisEmail/
-          Run/
-            RunCsvAnalysisEmail.cs
-      Workflow/
-        CsvAnalysisEmailWorkflow.cs
-    appsettings.json
-```
-
 ## Prereqs
 
 - .NET SDK (net8.0 or later)
@@ -46,7 +20,7 @@ src/
 
 ## Configure
 
-Edit `src/CsvEmail.Orchestrator.Api/appsettings.json`:
+Edit `src/Aiflow.Orchestrator.Api/appsettings.json`:
 
 - `OpenAI:ApiKey` + `OpenAI:Model`
 - `Smtp:*` (set `DryRun: true` to avoid sending during testing)
@@ -71,7 +45,7 @@ Smtp__DryRun=true
 From the repo root:
 
 ```
-dotnet run --project src/CsvEmail.Orchestrator.Api
+dotnet run --project src/Aiflow.Orchestrator.Api
 ```
 
 Open Swagger:
@@ -103,6 +77,6 @@ curl -X POST "http://localhost:5000/workflows/csv-analysis-email" \
 ## Notes
 
 - Agents are **separate projects** so you can version and deploy them independently.
-- `CsvEmail.Core` contains shared **models**, **options**, and **utilities**.
+- `Aiflow.Core` contains shared **Options**, **Utilities**, and **Abstractions for utilities** (now grouped under `src/Models/*`).
 - The vertical slice is `Features/CsvAnalysisEmail/Run` (request + handler + response in one folder).
 

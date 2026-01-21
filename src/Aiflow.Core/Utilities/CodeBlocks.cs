@@ -1,6 +1,6 @@
 using System.Text.RegularExpressions;
 
-namespace AiFlow.Core;
+namespace AiFlow.Core.Utilities;
 
 /// <summary>
 /// Provides methods for extracting fenced code blocks from text.

@@ -1,4 +1,5 @@
 using AiFlow.Core;
+using AiFlow.Core.Options;
 using MailKit.Net.Smtp;
 using MailKit.Security;
 using Microsoft.Extensions.Options;
