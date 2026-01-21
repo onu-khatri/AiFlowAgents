@@ -1,0 +1,52 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 18
+VisualStudioVersion = 18.2.11408.102
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AiFlow.Core", "src\AiFlow.Core\AiFlow.Core.csproj", "{F3A4823E-7E02-4376-B7B8-68F8C87BDF4A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AiFlow.Agents.CsvReader", "src\AiFlow.Agents.CsvReader\AiFlow.Agents.CsvReader.csproj", "{4F4CC4FD-1A92-45AF-80AE-C8C9B95B5127}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AiFlow.Agents.DataAnalyzer", "src\AiFlow.Agents.DataAnalyzer\AiFlow.Agents.DataAnalyzer.csproj", "{BEFC6072-7D7B-4BA0-9C33-E8C454878D4A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AiFlow.Agents.Emailer", "src\AiFlow.Agents.Emailer\AiFlow.Agents.Emailer.csproj", "{5B634B15-CB1B-48C2-AA6F-1203569366C4}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AiFlow.Orchestrator.Api", "src\AiFlow.Orchestrator.Api\AiFlow.Orchestrator.Api.csproj", "{A2BFA47F-70B4-451F-918F-F8A2FBA78CFE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{3C5155F8-42C1-4309-9E85-6CCCC1683E83}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+		.gitignore = .gitignore
+		README.md = README.md
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F3A4823E-7E02-4376-B7B8-68F8C87BDF4A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F3A4823E-7E02-4376-B7B8-68F8C87BDF4A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F3A4823E-7E02-4376-B7B8-68F8C87BDF4A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F3A4823E-7E02-4376-B7B8-68F8C87BDF4A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4F4CC4FD-1A92-45AF-80AE-C8C9B95B5127}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4F4CC4FD-1A92-45AF-80AE-C8C9B95B5127}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4F4CC4FD-1A92-45AF-80AE-C8C9B95B5127}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4F4CC4FD-1A92-45AF-80AE-C8C9B95B5127}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BEFC6072-7D7B-4BA0-9C33-E8C454878D4A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BEFC6072-7D7B-4BA0-9C33-E8C454878D4A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BEFC6072-7D7B-4BA0-9C33-E8C454878D4A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BEFC6072-7D7B-4BA0-9C33-E8C454878D4A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5B634B15-CB1B-48C2-AA6F-1203569366C4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5B634B15-CB1B-48C2-AA6F-1203569366C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5B634B15-CB1B-48C2-AA6F-1203569366C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5B634B15-CB1B-48C2-AA6F-1203569366C4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A2BFA47F-70B4-451F-918F-F8A2FBA78CFE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A2BFA47F-70B4-451F-918F-F8A2FBA78CFE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A2BFA47F-70B4-451F-918F-F8A2FBA78CFE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A2BFA47F-70B4-451F-918F-F8A2FBA78CFE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
